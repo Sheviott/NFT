@@ -651,7 +651,7 @@ textarea:not(:placeholder-shown) ~ label {
 }
 
 .menu__body {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: -100%;
   width: 100%;
