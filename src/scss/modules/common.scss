@@ -1,0 +1,200 @@
+.btn {
+  background: linear-gradient(92.84deg, #1dd844 1.44%, #cbf62e 126.29%);
+  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  color: #242424;
+  z-index: 2;
+  position: relative;
+  padding: 15px 30px;
+  font-weight: 500;
+  font-size: 16px;
+  &::before {
+    transition: all 0.3s ease 0s;
+  }
+  @media (min-width: $mobile) {
+    font-size: 20px;
+  }
+  &:before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(-45deg, #cbf62e 0%, #1dd844 66%);
+    transform: translate3d(0px, 0px, 0) scale(1);
+    filter: blur(5px);
+    border-radius: inherit;
+  }
+  @media (min-width: $tablet) {
+    &:hover {
+      &::before {
+        filter: blur(7px);
+        cursor: pointer;
+      }
+    }
+    &:active {
+      &::before {
+        content: "";
+        filter: blur(5px);
+      }
+    }
+  }
+}
+._back-gradient {
+  position: relative;
+  z-index: 1;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: -1;
+    background: linear-gradient(
+      170.98deg,
+      rgba(95, 56, 255, 0.55) 25.59%,
+      rgba(255, 14, 222, 0.55) 100.44%
+    );
+    filter: blur(86px);
+    transform: scale(0.6) rotate(11.86deg);
+  }
+}
+._circle {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+._circle-p {
+  &::before {
+    background: radial-gradient(
+      95.38% 95.38% at 50.77% 4.62%,
+      #dea8ff 0%,
+      #9d6ad9 44.51%,
+      #7a2bf6 100%
+    );
+  }
+}
+._circle-b {
+  &::before {
+    background: radial-gradient(
+        63.25% 73.53% at 65.32% 77.65%,
+        #045dfa 0%,
+        #0fc1d7 83.16%,
+        #06f6c7 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    transform: rotate(7.77deg);
+  }
+}
+._circle-g {
+  &::before {
+    background: radial-gradient(
+        95.38% 95.38% at 50.77% 4.62%,
+        #ddf92c 0%,
+        #8fec36 44.51%,
+        #00d448 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    transform: rotate(-25.73deg);
+  }
+}
+//========================================================================================================================================================
+// СТИЛИ
+//========================================================================================================================================================
+label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  padding: 15px 10px 15px 16px;
+  width: 100%;
+  transform: translateY(-50%);
+  transition: all 0.3s ease 0s;
+  pointer-events: none;
+  color: #757575;
+  font-size: 16px;
+  @media (min-width:$mobile){
+    font-size: 18px;
+  }
+}
+input,
+select {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin: 0 0 0 0;
+  padding: 15px 10px 15px 16px;
+  font-size: rem(18);
+  background: transparent;
+  border: 1px solid rgba(14, 1, 1, 1);
+  border-radius: 2px;
+  cursor: pointer;
+  background: #ffffff;
+  border-radius: 10px;
+}
+form {
+  margin: 0px auto;
+}
+
+//========================================================================================================================================================
+
+.form {
+  &__row {
+    position: relative;
+    height: 100%;
+  }
+  &__mark-isValid {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff067;
+    transform: translateY(-50%);
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__label-checkbox {
+    position: relative;
+    display: block;
+    padding: 0 0 0 35px;
+    transform: none;
+    pointer-events: all;
+  }
+  &__button {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+}
+
+//========================================================================================================================================================
+input:focus ~ label,
+input:not(:placeholder-shown) ~ label {
+  opacity: 0;
+}
+
+input:focus ~ label,
+textarea:focus ~ label {
+  opacity: 0;
+}
+input:not(:placeholder-shown) ~ label,
+textarea:not(:placeholder-shown) ~ label {
+  opacity: 0;
+}

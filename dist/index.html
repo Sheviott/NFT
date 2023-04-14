@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css?_v=20230414122831">
+  <title>Главная</title>
+</head>
+
+<body data-lp>
+  <div class="wrapper">
+      <header class="header">
+    <div class="header__container">
+      <div class="header__body">
+        <a  href="index.html" class="header__logo _circle _circle-p">
+          <img src="images/icons/logo.svg" alt=""></a>
+        </a>
+        <div class="header__menu menu">
+          <button type="button" class="menu__icon icon-menu">
+            <span></span>
+          </button>
+          <nav class="menu__body">
+            <a href="index.html" class="header__logo-mobile _circle _circle-p">
+              <img src="images/icons/logo.svg" alt=""></a>
+            </a>
+            <ul class="menu__list">
+              <li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
+              <li class="menu__item"><a href="#learn" class="menu__link">Что даст обучение</a></li>
+              <li class="menu__item"><button type="button" class="menu__btn">Личный кабинет</button></li>
+            </ul>
+          </nav>
+      </div>
+    </div>
+  </header>
+
+    <main class="page">
+      <section class="mainscreen ">
+        <div class="mainscreen__container _back-gradient">
+          <div class="mainscreen__body">
+            <div class="mainscreen__content">
+              <h1 class="mainscreen__title _circle _circle-g">Не упусти возможность войти в <span>прибыльную нишу</span></h1>
+              <div class="mainscreen__image image-man">
+                    <picture class="image-man__img _back-gradient">
+                      <source media='(max-width: 768px)' srcset=' images/main/manmobile.png 1x, images/main/manmobile@2x.png 2x' type='image/webp'>
+                      <source srcset='images/main/man.png 1x, images/main/man.png 2x' type='image/webp'>
+                    <img src="images/main/manmobile.png" alt="">
+                    </picture>
+              </div>
+              <div class="mainscreen__subtitle">Получи все нужные навыки для заработка на NFT всего за 28 дней!</div>
+              <a href="#popup" id="" class="mainscreen__btn btn popup-link">Начать зарабатывать на NFT</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="learn _back-gradient">
+        <div id="learn" class="learn__body _circle _circle-p">
+            <div class="learn__container">
+            <h2 class="learn__title">Что даст тебе обучение?</h2>
+            <div class="learn__content _back-gradient">
+              <div class="learn__column _circle _circle-b column-learn">
+                <div class="column-learn__body">
+                  <div class="column-learn__smile">
+                    <picture><source srcset="images/main/smile1.webp" type="image/webp"><img src="images/main/smile1.png" alt=""></picture>
+                  </div>
+                  <p class="column-learn__text">Откроешь свой первый криптокошелек и научишься с ним работать</p>
+                </div>
+              </div>
+              <div class="learn__column column-learn">
+                <div class="column-learn__body">
+                  <div class="column-learn__smile">
+                    <picture><source srcset="images/main/smile2.webp" type="image/webp"><img src="images/main/smile2.png" alt=""></picture>
+                  </div>
+                  <p class="column-learn__text">Узнаешь кто такие холдеры и флипперы</p>
+                </div>
+              </div>
+              <div class="learn__column column-learn">
+                <div class="column-learn__body">
+                  <div class="column-learn__smile">
+                    <picture><source srcset="images/main/smile3.webp" type="image/webp"><img src="images/main/smile3.png" alt=""></picture>
+                  </div>
+                  <p class="column-learn__text">Построишь план по быстрому приумножению заработанных средств</p>
+                </div>
+              </div>
+              <div class="learn__column column-learn">
+                <div class="column-learn__body">
+                  <div class="column-learn__smile">
+                    <picture><source srcset="images/main/smile4.webp" type="image/webp"><img src="images/main/smile4.png" alt=""></picture>
+                  </div>
+                  <p class="column-learn__text">Поймёшь, как выбирать правильные дропы</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+      <div id="popup" class="popup">
+  <div class="popup__body">
+    <div class="popup__content _back-gradient">
+      <a href="##" class="icon-close close-popup">
+        <span class="close"></span>
+      </a>
+      <div class="popup__wrapper">
+        <div class="popup__title">Начни прямо сейчас!</div>
+        <div class="popup__subtitle">
+          Получи все нужные навыки для заработка на NFT всего за 28 дней!
+        </div>
+        <form action="" method="" class="popup__form">
+          <div class="form__body">
+            <div class="form__row">
+              <input required placeholder=" " type="email" name="email" class="form__input" />
+              <label class="form__label">Ваш email</label>
+            </div>
+            <button class="form__btn btn" type="submit">Оплатить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+<script src="js/app.min.js?_v=20230414122831"></script>
+</body>
+</html>
